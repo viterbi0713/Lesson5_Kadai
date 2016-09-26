@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var Preview: UIImageView!
     
     @IBOutlet weak var PlayPause: UIButton!
+
     
     @IBOutlet weak var Next: UIButton!
     
@@ -27,6 +28,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         drawImage(imageCount: imageCount)
+        PlayPause.setTitle("再生", for: .normal)
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,6 +49,7 @@ class ViewController: UIViewController {
                                          selector: #selector(ViewController.incrementAndDraw),
                                          userInfo: nil,
                                          repeats: true)
+        
         //Play
         if flag == 1 {
             RunLoop.current.add(timer, forMode: RunLoopMode.defaultRunLoopMode)
