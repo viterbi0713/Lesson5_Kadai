@@ -49,7 +49,6 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bj7-fv-40A">
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="再生/停止"/>
                                         <connections>
                                             <action selector="PlayPause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3gp-qr-Rwx"/>
                                         </connections>
@@ -84,7 +83,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="Next" destination="MUT-lw-vhT" id="UnS-NT-uJ7"/>
+                        <outlet property="PlayPause" destination="bj7-fv-40A" id="FRB-98-My9"/>
                         <outlet property="Preview" destination="XLE-GC-eCP" id="M3e-Xg-51i"/>
+                        <outlet property="Previous" destination="cFf-aN-RpK" id="xo0-dt-8VK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

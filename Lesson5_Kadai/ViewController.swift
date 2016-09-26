@@ -9,30 +9,57 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    // Count for images to be displayed
     var imageCount:Int = 1
-    var flag = 0
+    //Flag to detect play or pause, flag = 1: Play, flag = 2: Pause
+    var flag = 1
     
     @IBOutlet weak var Preview: UIImageView!
     
+    @IBOutlet weak var PlayPause: UIButton!
+    
+    @IBOutlet weak var Next: UIButton!
+    
+    @IBOutlet weak var Previous: UIButton!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        drawImage(imageCount: imageCount)
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
     @IBAction func TrigDetailView(_ sender: AnyObject) {
     }
     
     
     @IBAction func PlayPause(_ sender: AnyObject) {
-        flag += 1
+        
+    
+        //Define timer
         let timer = Timer.scheduledTimer(timeInterval: 1.0,
                                          target: self,
                                          selector: #selector(ViewController.incrementAndDraw),
                                          userInfo: nil,
                                          repeats: true)
+        //Play
         if flag == 1 {
             RunLoop.current.add(timer, forMode: RunLoopMode.defaultRunLoopMode)
+            PlayPause.setTitle("停止", for: .normal)
+            Previous.isEnabled = false
+            Next.isEnabled = false
+            flag = 2
         }
-        if flag == 2 {
-            flag = 1
+        //Pause
+        else {
             timer.invalidate()
+            PlayPause.setTitle("再生", for: .normal)
+            flag = 1
         }
         
     }
@@ -54,18 +81,7 @@ class ViewController: UIViewController {
         }
         drawImage(imageCount: imageCount)
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        drawImage(imageCount: imageCount)
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     func incrementAndDraw() {
         imageCount += 1
         if imageCount > 3 {
