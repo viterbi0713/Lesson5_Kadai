@@ -12,6 +12,9 @@
 		14D7D2B71D936C7300572004 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D7D2B51D936C7300572004 /* Main.storyboard */; };
 		14D7D2B91D936C7300572004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D7D2B81D936C7300572004 /* Assets.xcassets */; };
 		14D7D2BC1D936C7300572004 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D7D2BA1D936C7300572004 /* LaunchScreen.storyboard */; };
+		14D7D2D91D937A8D00572004 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D7D2D61D937A8D00572004 /* 1.jpg */; };
+		14D7D2DA1D937A8D00572004 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D7D2D71D937A8D00572004 /* 2.jpg */; };
+		14D7D2DB1D937A8D00572004 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14D7D2D81D937A8D00572004 /* 3.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		14D7D2B81D936C7300572004 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14D7D2BB1D936C7300572004 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14D7D2BD1D936C7300572004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14D7D2D61D937A8D00572004 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		14D7D2D71D937A8D00572004 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		14D7D2D81D937A8D00572004 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,7 @@
 		14D7D2A51D936C7300572004 = {
 			isa = PBXGroup;
 			children = (
+				14D7D2D51D937A0600572004 /* img */,
 				14D7D2B01D936C7300572004 /* Lesson5_Kadai */,
 				14D7D2AF1D936C7300572004 /* Products */,
 			);
@@ -62,6 +69,16 @@
 				14D7D2BD1D936C7300572004 /* Info.plist */,
 			);
 			path = Lesson5_Kadai;
+			sourceTree = "<group>";
+		};
+		14D7D2D51D937A0600572004 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				14D7D2D61D937A8D00572004 /* 1.jpg */,
+				14D7D2D71D937A8D00572004 /* 2.jpg */,
+				14D7D2D81D937A8D00572004 /* 3.jpg */,
+			);
+			path = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +113,7 @@
 				TargetAttributes = {
 					14D7D2AD1D936C7300572004 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = TLFKFW99WW;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,6 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				14D7D2BC1D936C7300572004 /* LaunchScreen.storyboard in Resources */,
+				14D7D2D91D937A8D00572004 /* 1.jpg in Resources */,
+				14D7D2DA1D937A8D00572004 /* 2.jpg in Resources */,
+				14D7D2DB1D937A8D00572004 /* 3.jpg in Resources */,
 				14D7D2B91D936C7300572004 /* Assets.xcassets in Resources */,
 				14D7D2B71D936C7300572004 /* Main.storyboard in Resources */,
 			);
@@ -258,7 +279,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TLFKFW99WW;
 				INFOPLIST_FILE = Lesson5_Kadai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.techacademy.tooru.yoshihara.Lesson5-Kadai";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,7 +293,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TLFKFW99WW;
 				INFOPLIST_FILE = Lesson5_Kadai/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.techacademy.tooru.yoshihara.Lesson5-Kadai";
 				PRODUCT_NAME = "$(TARGET_NAME)";
