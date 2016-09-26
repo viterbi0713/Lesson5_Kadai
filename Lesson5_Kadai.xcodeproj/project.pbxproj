@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		142D49171D98E8A200D0FCDD /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142D49161D98E8A200D0FCDD /* DetailedViewController.swift */; };
 		14D7D2B21D936C7300572004 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7D2B11D936C7300572004 /* AppDelegate.swift */; };
 		14D7D2B41D936C7300572004 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D7D2B31D936C7300572004 /* ViewController.swift */; };
 		14D7D2B71D936C7300572004 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D7D2B51D936C7300572004 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		142D49161D98E8A200D0FCDD /* DetailedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 		14D7D2AE1D936C7300572004 /* Lesson5_Kadai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson5_Kadai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D7D2B11D936C7300572004 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14D7D2B31D936C7300572004 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				14D7D2B81D936C7300572004 /* Assets.xcassets */,
 				14D7D2BA1D936C7300572004 /* LaunchScreen.storyboard */,
 				14D7D2BD1D936C7300572004 /* Info.plist */,
+				142D49161D98E8A200D0FCDD /* DetailedViewController.swift */,
 			);
 			path = Lesson5_Kadai;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			files = (
 				14D7D2B41D936C7300572004 /* ViewController.swift in Sources */,
 				14D7D2B21D936C7300572004 /* AppDelegate.swift in Sources */,
+				142D49171D98E8A200D0FCDD /* DetailedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +326,7 @@
 				14D7D2C21D936C7300572004 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
