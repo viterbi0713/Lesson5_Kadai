@@ -9,18 +9,26 @@
 import UIKit
 
 class DetailedViewController: UIViewController {
-
+    var imageCount:Int = 0
+    
+    @IBOutlet weak var DetailedView: UIImageView!
+    
+    @IBOutlet weak var ShowImageCount: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        print("\(imageCount)")
+        DetailedView.image = UIImage(named: "\(imageCount).jpg")
+        ShowImageCount.text = "\(imageCount).jpg"
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
     /*
