@@ -48,7 +48,13 @@ class ViewController: UIViewController {
     
     
     @IBAction func TrigDetailView(_ sender: AnyObject) {
-        
+        if (timer !=  nil) {
+            timer?.invalidate()
+        }
+        PlayPause.setTitle("再生", for: .normal)
+        flag = 1
+        Previous.isEnabled = true
+        Next.isEnabled = true
     }
     
     
